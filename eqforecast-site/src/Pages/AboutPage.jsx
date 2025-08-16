@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutPage.css";
+import "../Css/AboutPage.css";
 
 const AboutPage = ({ navigateToPage }) => {
   return (
@@ -21,7 +21,7 @@ const AboutPage = ({ navigateToPage }) => {
             <button onClick={() => navigateToPage(4)} className="nav-item">
               Hotlines
             </button>
-            <button className="nav-item">Awareness</button>
+            <button on onClick={() => navigateToPage(2)}className="nav-item">Awareness</button>
             <button className="forecast-btn">Forecast Now</button>
           </div>
         </div>

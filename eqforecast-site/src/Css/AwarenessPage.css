@@ -5,13 +5,13 @@
 }
 
 /* Header Styles */
-.header {
+.awareness-page-header {
   background-color: #115e59;
   color: white;
   padding: 16px 24px;
 }
 
-.header-content {
+.awareness-page-header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,7 @@
   margin: 0 auto;
 }
 
-.logo {
+.awareness-page-logo {
   font-size: 24px;
   font-weight: bold;
 }
@@ -62,7 +62,7 @@
 }
 
 /* Hero Section */
-.hero-section {
+.awareness-pagehero-section {
   background-color: #6b5b73;
   color: white;
   text-align: center;

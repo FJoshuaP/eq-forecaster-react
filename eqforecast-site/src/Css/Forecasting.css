@@ -1,0 +1,331 @@
+/* Forecast Page Styles */
+.forecast-page-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* Header Styles (reusing from LandingPage) */
+.header {
+  background-color: #115e59;
+  color: white;
+  padding: 16px 24px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #d1d5db;
+}
+
+.nav-item.active {
+  color: #d1d5db;
+}
+
+.forecast-btn {
+  background-color: #d97706;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forecast-btn:hover {
+  background-color: #b45309;
+}
+
+.forecast-btn.active {
+  background-color: #b45309;
+}
+
+/* Main Content Layout */
+.forecast-content {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 320px;
+  background-color: #115e59;
+  color: white;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.input-section {
+  margin-bottom: 32px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.year-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #374151;
+  border-radius: 4px;
+  background-color: #374151;
+  color: white;
+  font-size: 14px;
+}
+
+.year-input::placeholder {
+  color: #9ca3af;
+}
+
+.year-input:focus {
+  outline: none;
+  border-color: #d97706;
+  box-shadow: 0 0 0 1px #d97706;
+}
+
+/* Forecast Table */
+.forecast-table-section {
+  margin-bottom: 32px;
+}
+
+.table-title {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.forecast-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #0f766e;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.forecast-table th {
+  background-color: #134e4a;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.forecast-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #115e59;
+  font-size: 14px;
+}
+
+.forecast-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* BIN Selection */
+.bin-selection-section {
+  background-color: #0f766e;
+  padding: 24px;
+  margin: 0 -24px -24px -24px;
+  border-radius: 8px 8px 0 0;
+}
+
+.selection-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.bin-id-label {
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+/* Map Area */
+.map-area {
+  flex: 1;
+  position: relative;
+  background-color: white;
+}
+
+.map-container {
+  height: calc(100% - 60px);
+  position: relative;
+  overflow: hidden;
+}
+
+.philippines-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%);
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 100%;
+  gap: 2px;
+  padding: 20px;
+}
+
+.map-cell {
+  border-radius: 8px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.map-cell:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.map-cell.green {
+  background-color: #22c55e;
+}
+
+.map-cell.red {
+  background-color: #dc2626;
+}
+
+.map-cell.brown {
+  background-color: #a16207;
+}
+
+.map-cell.purple {
+  background-color: #9333ea;
+}
+
+/* Location Markers */
+.location-markers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.marker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.marker-icon {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.marker-label {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.attention-marker {
+  background-color: rgba(220, 38, 38, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #dc2626;
+}
+
+.attention-icon {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.attention-label {
+  background-color: #dc2626;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Disclaimer */
+.forecasting-disclaimer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(17, 94, 89, 0.9);
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .forecast-content {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .sidebar {
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  .map-area {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .map-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  
+  .marker-label {
+    font-size: 9px;
+  }
+}

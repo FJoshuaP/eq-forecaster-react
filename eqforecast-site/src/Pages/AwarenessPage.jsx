@@ -1,13 +1,13 @@
 import React from "react";
-import "./AwarenessPage.css";
+import "../Css/AwarenessPage.css";
 
 const AwarenessPage = ({ navigateToPage }) => {
   return (
     <div className="awareness-page-container">
       {/* Header */}
-      <div className="header">
-        <div className="header-content">
-          <div className="logo">OPAL</div>
+      <div className="awareness-page-header">
+        <div className="awareness-page-header-content">
+          <div className="awareness-pagelogo">OPAL</div>
           <div className="nav-menu">
             <button onClick={() => navigateToPage(1)} className="nav-item">
               Overview
@@ -30,7 +30,7 @@ const AwarenessPage = ({ navigateToPage }) => {
       </div>
 
       {/* Main Hero Section */}
-      <div className="hero-section">
+      <div className="awareness-pagehero-section">
         <h1 className="hero-title">
           What to do BEFORE, DURING, and AFTER an earthquake?
         </h1>

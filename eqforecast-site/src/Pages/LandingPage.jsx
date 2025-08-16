@@ -1,5 +1,5 @@
 import React from "react";
-import "./LandingPage.css";
+import "../Css/LandingPage.css";
 
 const LandingPage = ({ navigateToPage }) => {
   return (
@@ -15,14 +15,15 @@ const LandingPage = ({ navigateToPage }) => {
             >
               Overview
             </button>
+
             <button onClick={() => navigateToPage(3)} className="nav-item">
               About
             </button>
             <button onClick={() => navigateToPage(4)} className="nav-item">
               Hotlines
             </button>
-            <button className="nav-item">Awareness</button>
-            <button className="forecast-btn">Forecast Now</button>
+            <button onClick={() => navigateToPage(2)} className="nav-item">Awareness</button>
+            <button onClick={() => navigateToPage(5)}  className="forecast-btn">Forecast Now</button>
           </div>
         </div>
       </div>
@@ -34,7 +35,7 @@ const LandingPage = ({ navigateToPage }) => {
           Regional Earthquake Forecasting in the PH Modelling Attention-Driven
           LSTM
         </p>
-        <button onClick={() => navigateToPage(3)} className="hero-cta-btn">
+        <button onClick={() => navigateToPage(5)} className="hero-cta-btn">
           Forecast Now
         </button>
       </div>
@@ -95,7 +96,9 @@ const LandingPage = ({ navigateToPage }) => {
           >
             About
           </button>
-          <button className="cta-btn-primary">Forecast Now</button>
+          <button onClick={() => navigateToPage(5)} className="cta-btn-primary">
+            Forecast Now
+            </button>
         </div>
         <div className="disclaimer">
           Disclaimer: For informational and research purposes only
