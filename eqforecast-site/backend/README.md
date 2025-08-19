@@ -4,12 +4,17 @@ This is the FastAPI backend for the earthquake forecasting system. Currently, it
 
 ## 🚀 Quick Start
 
-### 1. Install Dependencies
+### 1. Activate Conda Environment
+```bash
+conda activate thesisconda
+```
+
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run the Server
+### 3. Run the Server
 ```bash
 # Option 1: Using the run script
 python run.py
@@ -18,7 +23,7 @@ python run.py
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-### 3. Access the API
+### 4. Access the API
 - **API Base URL**: http://localhost:8000
 - **Interactive Docs**: http://localhost:8000/docs
 - **Health Check**: http://localhost:8000/health
@@ -82,7 +87,7 @@ backend/
 If you encounter issues:
 
 1. **Port already in use**: Change the port in `run.py` or kill existing processes
-2. **Import errors**: Ensure all dependencies are installed with `pip install -r requirements.txt`
+2. **Import errors**: Ensure you're in the `thesisconda` environment and all dependencies are installed
 3. **CORS issues**: Check that your frontend URL is in the allowed origins in `main.py`
 
 ## 📝 Notes
@@ -91,3 +96,4 @@ If you encounter issues:
 - The ML model is not yet implemented
 - All endpoints return sample/placeholder data
 - Designed to work with the React frontend in the parent directory
+- Uses your existing `thesisconda` conda environment
