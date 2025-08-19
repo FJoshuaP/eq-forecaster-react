@@ -1,0 +1,18 @@
+nohup: ignoring input
+/workspace/eqforecast-backend/app/main.py:51: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Will watch for changes in these directories: ['/workspace/eqforecast-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [8181] using StatReload
+INFO:     Started server process [8184]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Database initialized successfully
+INFO:     127.0.0.1:36732 - "GET /api/regions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36738 - "GET /api/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36742 - "GET /docs HTTP/1.1" 200 OK
