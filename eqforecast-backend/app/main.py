@@ -1,17 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
-import uvicorn
-from typing import List, Optional
-import numpy as np
-import pandas as pd
-from datetime import datetime, timedelta
-import json
-
-# Import our modules (we'll create these next)
-# from app.models.earthquake_model import EarthquakeForecastModel
-# from app.data.data_manager import DataManager
-# from app.api.schemas import ForecastRequest, ForecastResponse, EarthquakeData
+from datetime import datetime
+from typing import Optional
 
 app = FastAPI(
     title="Earthquake Forecasting API",
@@ -61,7 +51,7 @@ async def get_forecast(year: Optional[int] = None):
     if year is None:
         year = datetime.now().year
     
-    # Mock forecast generation (replace with actual ML model)
+    # Mock forecast generation (replace with actual ML model later)
     forecast = {
         "year": year,
         "generated_at": datetime.now().isoformat(),
@@ -199,6 +189,7 @@ async def get_regions():
     }
 
 if __name__ == "__main__":
+    import uvicorn
     uvicorn.run(
         "app.main:app",
         host="0.0.0.0",
