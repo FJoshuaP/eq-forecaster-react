@@ -73,6 +73,26 @@
   background-color: #ff7b00;
 }
 
+/* Bins Button */
+.forecast-page-bins-btn {
+  background-color: #8abcbb;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.forecast-page-bins-btn:hover {
+  background-color: #547272;
+}
+
+.forecast-page-bins-btn.active {
+  background-color: #ff7b00;
+}
+
 /* Back Button */
 .forecast-page-back-btn {
   position: absolute;
@@ -370,7 +390,10 @@
     font-size: 11px;
   }
   
-  .forecast-page-nav-item, .forecast-page-forecast-btn, .forecast-page-admin-btn {
+  .forecast-page-nav-item, 
+  .forecast-page-forecast-btn, 
+  .forecast-page-bins-btn,
+  .forecast-page-admin-btn {
     padding: 6px 8px;
     font-size: 11px;
   }

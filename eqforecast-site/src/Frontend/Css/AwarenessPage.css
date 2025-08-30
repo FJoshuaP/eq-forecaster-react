@@ -210,9 +210,11 @@
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 48px;
   align-items: start;
+  grid-template-columns: 1fr 1fr; 
+  
+
 }
 
 .awareness-page-drop-cover-hold {
@@ -261,7 +263,7 @@
   width: 100%;
   max-width: 400px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0px;
   background-color: #d1d5db;
 }
 

@@ -385,6 +385,12 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
             >
               Forecast Now
             </button>
+            <button
+              onClick={() => navigateToPage(8)}
+              className="forecast-page-bins-btn"
+            >
+              Bins
+            </button>
             {isLoggedIn && (
               <button
                 onClick={() => navigateToPage(2)}

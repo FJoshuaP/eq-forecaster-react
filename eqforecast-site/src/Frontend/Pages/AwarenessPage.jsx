@@ -1,5 +1,6 @@
 import React from "react";
 import "../Css/AwarenessPage.css";
+import dch from "../Pics/dch.png";
 
 const AwarenessPage = ({ navigateToPage, isLoggedIn }) => {
   const goBack = () => {
@@ -189,7 +190,7 @@ const AwarenessPage = ({ navigateToPage, isLoggedIn }) => {
 
           <div className="awareness-page-during-image">
             <img
-              src="/api/placeholder/400/300"
+              src={dch}
               alt="Drop, Cover, and Hold On demonstration"
               className="awareness-page-demo-image"
             />

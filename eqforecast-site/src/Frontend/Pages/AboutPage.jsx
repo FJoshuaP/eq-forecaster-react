@@ -1,6 +1,10 @@
 import React from "react";
 import "../Css/AboutPage.css";
 import model from "../Pics/model.png";
+import gab from "../Pics/gab.jpg";
+import ju from "../Pics/ju.jpg";
+import jp from "../Pics/jp.jpg";
+import kia from "../Pics/kia.jpg";
 
 const AboutPage = ({ navigateToPage, isLoggedIn }) => {
   const goBack = () => {
@@ -81,21 +85,33 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
                 Long Short-Term Memory (LSTM) Networks
               </h2>
               <p className="about-page-section-paragraph">
-                Long Short-Term Memory (LSTM) networks are a type of recurrent neural network (RNN) built to model sequential data. Since earthquakes follow complex time-based patterns, LSTM is well-suited for analyzing how past seismic events shape future ones.
+                Long Short-Term Memory (LSTM) networks are a type of recurrent
+                neural network (RNN) built to model sequential data. Since
+                earthquakes follow complex time-based patterns, LSTM is
+                well-suited for analyzing how past seismic events shape future
+                ones.
+              </p>
+              <p className="about-page-section-paragraph">
+                In our system, we use a pure LSTM model to forecast the maximum
+                annual earthquake magnitude per region. This focuses on
+                identifying the strongest possible seismic events, helping
+                provide a clearer picture of potential hazards each year.
+              </p>
 
+              <h2 className="about-page-section-title">Attention - LSTM</h2>
+              <p className="about-page-section-paragraph">
+                While LSTM captures time-based dependencies, it does not always
+                distinguish which past events matter most. To address this, we
+                integrate an Attention Mechanism—a technique that allows the
+                model to prioritize significant seismic signals while minimizing
+                less relevant ones.
               </p>
               <p className="about-page-section-paragraph">
-                In our system, we use a pure LSTM model to forecast the maximum annual earthquake magnitude per region. This focuses on identifying the strongest possible seismic events, helping provide a clearer picture of potential hazards each year.
-              </p>
-
-              <h2 className="about-page-section-title">
-                Attention - LSTM
-              </h2>
-              <p className="about-page-section-paragraph">
-                While LSTM captures time-based dependencies, it does not always distinguish which past events matter most. To address this, we integrate an Attention Mechanism—a technique that allows the model to prioritize significant seismic signals while minimizing less relevant ones.
-              </p>
-              <p className="about-page-section-paragraph">
-                This enhanced Attention-LSTM model is applied to forecast annual earthquake frequency. By highlighting critical patterns in earthquake history, the attention mechanism strengthens the model’s ability to recognize recurring seismic activity and improves forecasting accuracy compared to standard LSTM
+                This enhanced Attention-LSTM model is applied to forecast annual
+                earthquake frequency. By highlighting critical patterns in
+                earthquake history, the attention mechanism strengthens the
+                model’s ability to recognize recurring seismic activity and
+                improves forecasting accuracy compared to standard LSTM
               </p>
 
               <h2 className="about-page-section-title">
@@ -118,10 +134,19 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
                 Quadtree Spatial Binning
               </h2>
               <p className="about-page-section-paragraph">
-                Earthquake activity in the Philippines is uneven—some regions experience frequent seismic events, while others remain relatively quiet. To capture this, we applied Quadtree-based Spatial Binning, an adaptive method that divides the country into smaller regions or “bins” depending on earthquake density.
+                Earthquake activity in the Philippines is uneven—some regions
+                experience frequent seismic events, while others remain
+                relatively quiet. To capture this, we applied Quadtree-based
+                Spatial Binning, an adaptive method that divides the country
+                into smaller regions or “bins” depending on earthquake density.
               </p>
               <p className="about-page-section-paragraph">
-                Active zones are represented with finer bins, while low-activity areas are grouped into larger bins. After merging, these bins form static spatial zones used by the models. In simple terms, bins act as statistical containers that balance earthquake distribution across regions, making forecasts more reliable and region-specific.
+                Active zones are represented with finer bins, while low-activity
+                areas are grouped into larger bins. After merging, these bins
+                form static spatial zones used by the models. In simple terms,
+                bins act as statistical containers that balance earthquake
+                distribution across regions, making forecasts more reliable and
+                region-specific.
               </p>
             </div>
 
@@ -175,7 +200,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
               <div className="about-page-team-member-card">
                 <div className="about-page-member-image-container">
                   <img
-                    src="/api/placeholder/80/80"
+                    src={ju}
                     alt="Julia Abasolo"
                     className="about-page-member-image"
                   />
@@ -183,8 +208,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
                 <div className="about-page-member-info">
                   <h4 className="about-page-member-name">Abasolo, Julia</h4>
                   <p className="about-page-member-description">
-                    Body text for whatever you'd like to say. Add main takeaway
-                    points, quotes, anecdotes, or even a very very short story.
+                    Frontend, Documentation
                   </p>
                 </div>
               </div>
@@ -192,7 +216,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
               <div className="about-page-team-member-card">
                 <div className="about-page-member-image-container">
                   <img
-                    src="/api/placeholder/80/80"
+                    src={kia}
                     alt="Kiara Laxamana"
                     className="about-page-member-image"
                   />
@@ -200,8 +224,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
                 <div className="about-page-member-info">
                   <h4 className="about-page-member-name">Laxamana, Kiara</h4>
                   <p className="about-page-member-description">
-                    Body text for whatever you'd like to say. Add main takeaway
-                    points, quotes, anecdotes, or even a very very short story.
+                    Machine Learning, Documentation
                   </p>
                 </div>
               </div>
@@ -209,7 +232,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
               <div className="about-page-team-member-card">
                 <div className="about-page-member-image-container">
                   <img
-                    src="/api/placeholder/80/80"
+                    src={gab}
                     alt="Gabriel Ocampo"
                     className="about-page-member-image"
                   />
@@ -217,8 +240,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
                 <div className="about-page-member-info">
                   <h4 className="about-page-member-name">Ocampo, Gabriel</h4>
                   <p className="about-page-member-description">
-                    Body text for whatever you'd like to say. Add main takeaway
-                    points, quotes, anecdotes, or even a very very short story.
+                    Documentation, UI/UX Designer
                   </p>
                 </div>
               </div>
@@ -226,7 +248,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
               <div className="about-page-team-member-card">
                 <div className="about-page-member-image-container">
                   <img
-                    src="/api/placeholder/80/80"
+                    src={jp}
                     alt="Joshua Perez"
                     className="about-page-member-image"
                   />
@@ -234,8 +256,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
                 <div className="about-page-member-info">
                   <h4 className="about-page-member-name">Perez, Joshua</h4>
                   <p className="about-page-member-description">
-                    Body text for whatever you'd like to say. Add main takeaway
-                    points, quotes, anecdotes, or even a very very short story.
+                    Backend, Documentation
                   </p>
                 </div>
               </div>

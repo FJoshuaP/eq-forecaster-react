@@ -6,6 +6,7 @@ import AwarenessPage from "./Frontend/Pages/AwarenessPage";
 import AboutPage from "./Frontend/Pages/AboutPage";
 import HotlinePage from "./Frontend/Pages/HotlinePage";
 import ForecastPage from "./Frontend/Pages/ForecastingPage";
+import BinPage from "./Frontend/Pages/BinPage";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState(3); // Changed from 1 to 3 (LandingPage)
@@ -56,6 +57,9 @@ const App = () => {
       )}
       {currentPage === 7 && (
         <ForecastPage navigateToPage={navigateToPage} isLoggedIn={isLoggedIn} />
+      )}
+      {currentPage === 8 && (
+        <BinPage navigateToPage={navigateToPage} isLoggedIn={isLoggedIn} />
       )}
     </div>
   );
