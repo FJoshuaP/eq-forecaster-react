@@ -15,7 +15,11 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 15.875,
       center_lat: 9.5,
       center_lon: 121.0625,
-      locations: ["Palawan (northern part)", "Mindoro", "Romblon"],
+      locations: [
+        "Southern Mindoro",
+        "Panay (Aklan, Antique, Iloilo)",
+        "Western Negros (Occidental/Oriental)",
+      ],
     },
     {
       id: 1,
@@ -25,7 +29,11 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 3.25,
       center_lon: 126.61875,
-      locations: ["North Maluku", "Halmahera Sea"],
+      locations: [
+        "Celebes Sea",
+        "Southern Mindanao offshore (Sarangani Bay, Davao Occidental)",
+        "Border near Indonesia",
+      ],
     },
     {
       id: 2,
@@ -35,7 +43,9 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 3.25,
       center_lon: 128.20625,
-      locations: ["Maluku Sea", "Eastern Halmahera"],
+      locations: [
+        "Celebes Sea–Pacific transition (offshore southeast of Mindanao)",
+      ],
     },
     {
       id: 3,
@@ -45,7 +55,11 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 5.75,
       center_lon: 126.61875,
-      locations: ["Sangihe Islands", "North Sulawesi Sea"],
+      locations: [
+        "Davao Region (Davao Oriental, Occidental, City)",
+        "Compostela Valley",
+        "Parts of Sarangani",
+      ],
     },
     {
       id: 4,
@@ -55,7 +69,13 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 8.25,
       center_lon: 125.03125,
-      locations: ["Northern Mindanao", "Camiguin", "Bohol Sea"],
+      locations: [
+        "Bukidnon",
+        "Misamis Oriental",
+        "Agusan del Sur",
+        "Northern Davao del Norte",
+        "Northern Cotabato",
+      ],
     },
     {
       id: 5,
@@ -65,7 +85,15 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 10.75,
       center_lon: 125.03125,
-      locations: ["Cebu", "Bohol", "Central Visayas"],
+      locations: [
+        "Northern Agusan del Norte",
+        "Northern Surigao del Sur",
+        "Northern Mindanao uplands",
+        "Southern Leyte",
+        "Eastern Samar",
+        "Dinagat Islands",
+        "Samar",
+      ],
     },
     {
       id: 6,
@@ -75,7 +103,12 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 8.25,
       center_lon: 126.61875,
-      locations: ["Davao Gulf", "Mindanao Sea", "Surigao"],
+      locations: [
+        "Surigao del Sur",
+        "Davao Oriental",
+        "Agusan del Sur",
+        "Eastern Mindanao offshore (Philippine Trench)",
+      ],
     },
     {
       id: 7,
@@ -85,7 +118,12 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 13.25,
       center_lon: 120.26875,
-      locations: ["Southern Luzon", "Mindoro Strait", "Batangas"],
+      locations: [
+        "Southern Luzon (Mindoro, Marinduque, Batangas, Quezon)",
+        "Northern Palawan",
+        "Dasmarinas",
+        "Muntilupa",
+      ],
     },
     {
       id: 8,
@@ -95,7 +133,15 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 15.75,
       center_lon: 120.26875,
-      locations: ["Central Luzon", "Manila Bay", "Zambales"],
+      locations: [
+        "Central Luzon (Zambales, Bataan, Pampanga, Nueva Ecija, Pangasinan, Tarlac, Baguio, Cabanatuan)",
+        "Metro Manila edge",
+        "Olangapo",
+        "Bataan",
+        "Mariveles",
+        "Benguet",
+        "La Union",
+      ],
     },
     {
       id: 9,
@@ -105,7 +151,20 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 15.75,
       center_lon: 121.85625,
-      locations: ["Metro Manila", "Rizal", "Laguna", "Quezon"],
+      locations: [
+        "Quezon Province",
+        "Pasig",
+        "Taguig",
+        "Rizal",
+        "Tanay",
+        "Antipolo",
+        "Dona Remedios Trinidad",
+        "Montalbon",
+        "Quirino",
+        "Aurora",
+        "Camarines Norte",
+        "Polillo Islands",
+      ],
     },
     {
       id: 10,
@@ -115,7 +174,11 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 18.25,
       center_lon: 120.26875,
-      locations: ["Ilocos", "La Union", "Pangasinan"],
+      locations: [
+        "Ilocos Region (Ilocos Norte, Ilocos Sur, La Union, Pangasinan)",
+        "Abra",
+        "Vigan",
+      ],
     },
     {
       id: 11,
@@ -125,7 +188,15 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 18.25,
       center_lon: 121.85625,
-      locations: ["Cagayan Valley", "Nueva Ecija", "Tarlac"],
+      locations: [
+        "Nueva Vizcaya",
+        "Quirino",
+        "Southern Isabela",
+        "Tuguegarao",
+        "Ilagan",
+        "Apayao",
+        "Kalinga",
+      ],
     },
     {
       id: 12,
@@ -135,7 +206,10 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 20.75,
       center_lon: 120.26875,
-      locations: ["Northern Luzon", "Cagayan", "Ilocos Norte"],
+      locations: [
+        "Northern Luzon (Cagayan, Apayao, Mountain Province, Kalinga)",
+        "Batanes offshore",
+      ],
     },
     {
       id: 13,
@@ -145,7 +219,12 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 20.75,
       center_lon: 121.85625,
-      locations: ["Cagayan", "Isabela", "Kalinga"],
+      locations: [
+        "Eastern Cagayan Valley",
+        "Batanes",
+        "Northern Isabela",
+        "Cagayan up to Babuyan Islands",
+      ],
     },
     {
       id: 14,
@@ -155,7 +234,14 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 3.97,
       center_lat: 13.25,
       center_lon: 125.03125,
-      locations: ["Samar", "Eastern Visayas", "Leyte Gulf"],
+      locations: [
+        "Samar",
+        "Northern Samar",
+        "Masbate",
+        "Sorsogon",
+        "Albay",
+        "Catanduanes",
+      ],
     },
     {
       id: 15,
@@ -165,7 +251,10 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 7.94,
       center_lat: 7.0,
       center_lon: 128.20625,
-      locations: ["North Maluku", "Celebes Sea"],
+      locations: [
+        "Philippine Trench (east of Mindanao)",
+        "Offshore Davao–Caraga",
+      ],
     },
     {
       id: 16,
@@ -175,7 +264,10 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 7.94,
       center_lat: 9.5,
       center_lon: 123.44375,
-      locations: ["Negros", "Siquijor", "Bohol Sea"],
+      locations: [
+        "Central–Eastern Visayas (Leyte, Samar, Biliran, Cebu, Bohol, Zambonga del Sur, Lanao del Norte, Misamis Occidental, Parts of Zambonga del Norte)",
+        "Northern Mindanao coast",
+      ],
     },
     {
       id: 17,
@@ -185,7 +277,19 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 7.94,
       center_lat: 13.25,
       center_lon: 122.65,
-      locations: ["Bicol Peninsula", "Masbate", "Albay"],
+      locations: [
+        "Bicol Region (Camarines Norte, Camarines Sur, Albay)",
+        "Sibuyan Island",
+        "Parts of Masbate",
+        "Romblon",
+        " Sorosogon",
+        "Oriental Mindoro",
+        "Marinduque",
+        "Catanduanes",
+        "Parts of Batangas",
+        "Calamba Laguna",
+        "Quezon",
+      ],
     },
     {
       id: 18,
@@ -195,7 +299,10 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 31.75,
       center_lat: 17.0,
       center_lon: 127.4125,
-      locations: ["Philippine Sea", "Pacific Ocean"],
+      locations: [
+        "Philippine Trench (east of Luzon & Samar)",
+        "Deep Pacific offshore area",
+      ],
     },
     {
       id: 19,
@@ -205,7 +312,9 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 7.94,
       center_lat: 4.5,
       center_lon: 125.03125,
-      locations: ["North Sulawesi", "Celebes Sea"],
+      locations: [
+        "Southern Mindanao (General Santos, South Cotabato, Sarangani, Sultan Kudarat, Davao Occidental, Davao del Sur, Maguindanao del Sur)",
+      ],
     },
     {
       id: 20,
@@ -215,7 +324,12 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 7.94,
       center_lat: 10.75,
       center_lon: 127.4125,
-      locations: ["Mindanao Sea", "Eastern Mindanao"],
+      locations: [
+        "Eastern Visayas offshore (Samar, Leyte east coast)",
+        "Siargao",
+        "Socorro",
+        "Philippine Trench (Tacloban–Borongan area)",
+      ],
     },
     {
       id: 21,
@@ -225,7 +339,10 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 23.81,
       center_lat: 18.25,
       center_lon: 124.2375,
-      locations: ["Northern Philippines Sea", "Luzon Strait"],
+      locations: [
+        "Bicol Region (Camarines Sur, Albay, Catanduanes)",
+        "Eastern Luzon (Quezon, Aurora, Isabela coastal areas)",
+      ],
     },
     {
       id: 22,
@@ -235,7 +352,13 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 47.625,
       center_lat: 14.5,
       center_lon: 117.8875,
-      locations: ["South China Sea", "Western Philippines"],
+      locations: [
+        "Palawan",
+        "Mindoro",
+        "Calamian Islands",
+        "Balabac",
+        "Spratly Islands vicinity (West Philippine Sea)",
+      ],
     },
     {
       id: 23,
@@ -245,7 +368,11 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       area: 39.6875,
       center_lat: 4.5,
       center_lon: 120.26875,
-      locations: ["Sulu Sea", "Southern Philippines", "Palawan (southern)"],
+      locations: [
+        "Sulu Archipelago (Tawi-Tawi, Basilan, Jolo)",
+        "Zamboanga City ",
+        "Celebes Sea",
+      ],
     },
   ];
 

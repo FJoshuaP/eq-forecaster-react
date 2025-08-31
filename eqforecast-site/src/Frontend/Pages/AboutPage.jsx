@@ -5,6 +5,7 @@ import gab from "../Pics/gab.jpg";
 import ju from "../Pics/ju.jpg";
 import jp from "../Pics/jp.jpg";
 import kia from "../Pics/kia.jpg";
+import group from "../Pics/group.jpg";
 
 const AboutPage = ({ navigateToPage, isLoggedIn }) => {
   const goBack = () => {
@@ -168,7 +169,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
             <div className="about-page-team-intro">
               <div className="about-page-team-image-container">
                 <img
-                  src="/api/placeholder/400/250"
+                  src={group}
                   alt="Team photo"
                   className="about-page-team-image"
                 />
