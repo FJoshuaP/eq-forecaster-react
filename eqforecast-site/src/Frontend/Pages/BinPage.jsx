@@ -5,7 +5,7 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortConfig, setSortConfig] = useState({ key: "id", direction: "asc" });
 
-  // Hardcoded bins with location information
+
   const binsData = [
     {
       id: 0,
@@ -417,12 +417,12 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
   });
 
   const goBack = () => {
-    navigateToPage(7); // Go back to forecast page
+    navigateToPage(7); 
   };
 
   return (
     <div className="bin-page-container">
-      {/* Header */}
+     
       <div className="bin-page-header">
         <button
           onClick={goBack}
@@ -491,7 +491,7 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
       </div>
 
       <div className="bin-page-content">
-        {/* Header Section */}
+      
         <div className="bin-page-title-section">
           <h1 className="bin-page-title">Spatial Bins Overview</h1>
           <p className="bin-page-subtitle">
@@ -500,7 +500,7 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
           </p>
         </div>
 
-        {/* Search and Statistics */}
+        
         <div className="bin-page-controls">
           <div className="bin-page-search-container">
             <input
@@ -544,7 +544,7 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
           </div>
         </div>
 
-        {/* Table */}
+        
         <div className="bin-page-table-container">
           <table className="bin-page-table">
             <thead>
@@ -669,7 +669,7 @@ const BinPage = ({ navigateToPage, isLoggedIn }) => {
           </div>
         )}
 
-        {/* Information Note */}
+       
         <div className="bin-page-info-note">
           <div className="bin-page-note-icon">ℹ️</div>
           <div>

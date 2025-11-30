@@ -1,11 +1,11 @@
-/* Forecast Page Styles */
+
 .forecast-page-container {
   min-height: 100vh;
   background-color: #f8fafc;
   font-family: Inter, Sans-serif;
 }
 
-/* Forecast Page Header Styles */
+
 .forecast-page-header {
   background-color: #102d30;
   color: white;
@@ -73,7 +73,6 @@
   background-color: #ff7b00;
 }
 
-/* Bins Button */
 .forecast-page-bins-btn {
   background-color: #8abcbb;
   padding: 8px 16px;
@@ -93,7 +92,7 @@
   background-color: #ff7b00;
 }
 
-/* Back Button */
+
 .forecast-page-back-btn {
   position: absolute;
   left: 24px;
@@ -123,7 +122,7 @@
   height: 20px;
 }
 
-/* Admin Button */
+
 .forecast-page-admin-btn {
   background-color: #f97316;
   padding: 8px 16px;
@@ -139,13 +138,13 @@
   background-color: #ea580c;
 }
 
-/* Main Content Layout */
+
 .forecast-page-content {
   display: flex;
   min-height: calc(100vh - 80px);
 }
 
-/* Sidebar Styles */
+
 .forecast-page-sidebar {
   width: 450px;
   background-color: white;
@@ -189,7 +188,7 @@
   box-shadow: 0 0 0 3px rgba(17, 94, 89, 0.1);
 }
 
-/* Forecast Table */
+
 .forecast-page-table-section {
   margin-bottom: 32px;
 }
@@ -245,7 +244,7 @@
   background-color: #f9fafb;
 }
 
-/* Map Area */
+
 .forecast-page-map-area {
   flex: 1;
   position: relative;
@@ -260,13 +259,13 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure Leaflet map takes full container size */
+
 .leaflet-container {
   height: 100% !important;
   width: 100% !important;
 }
 
-/* Leaflet popup customization */
+
 .leaflet-popup-content-wrapper {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -277,7 +276,7 @@
   font-family: inherit;
 }
 
-/* Ensure map controls are visible */
+
 .leaflet-control-zoom {
   border: none !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
@@ -290,7 +289,7 @@
   font-weight: bold !important;
 }
 
-/* Disclaimer */
+
 .forecast-page-disclaimer {
   position: absolute;
   bottom: 0;
@@ -316,7 +315,7 @@
   font-weight: bold;
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
   .forecast-page-back-btn {
     left: calc((100vw - 1280px) / 2 + 24px);
@@ -427,7 +426,7 @@
   }
 }
 
-/* Custom Tooltip Styles for Spatial Bins */
+
 .bin-tooltip {
   background: rgba(0, 0, 0, 0.9) !important;
   border: 2px solid #2563eb !important;
@@ -444,7 +443,6 @@
   border-top-color: #2563eb !important;
 }
 
-/* Leaflet tooltip arrow styling */
 .leaflet-tooltip-top::before {
   border-top-color: #2563eb !important;
 }

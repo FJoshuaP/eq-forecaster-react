@@ -32,7 +32,7 @@ const LoginPage = ({ navigateToPage, onLoginSuccess }) => {
   };
 
   const handleGuestLogin = () => {
-    // Navigate to landing page as guest
+    
     navigateToPage(3);
   };
 
@@ -42,7 +42,7 @@ const LoginPage = ({ navigateToPage, onLoginSuccess }) => {
 
   return (
     <div className="login-page-container">
-      {/* Back Button */}
+      
       <button
         onClick={goBackToLanding}
         className="login-page-back-btn"

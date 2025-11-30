@@ -1,11 +1,10 @@
-/* Awareness Page Styles */
+
 .awareness-page-container {
   font-family: Inter, Sans-serif;
   min-height: 100vh;
   background-color: white;
 }
 
-/* Awareness Page Header Styles */
 .awareness-page-header {
   background-color: #102d30;
   color: white;
@@ -69,7 +68,7 @@
   background-color: #547272;
 }
 
-/* Back Button */
+
 .awareness-page-back-btn {
   position: absolute;
   left: 24px;
@@ -99,7 +98,7 @@
   height: 20px;
 }
 
-/* Admin Button */
+
 .awareness-page-admin-btn {
   background-color: #f97316;
   padding: 8px 16px;
@@ -115,7 +114,6 @@
   background-color: #ea580c;
 }
 
-/* Hero Section */
 .awareness-page-hero-section {
   background-color: #3d3b32;
   color: white;
@@ -131,7 +129,6 @@
   line-height: 1.2;
 }
 
-/* Section Styles */
 .awareness-page-section-title {
   font-size: 32px;
   font-weight: bold;
@@ -178,7 +175,6 @@
   margin-bottom: 4px;
 }
 
-/* Before Section */
 .awareness-page-before-section {
   background-color: #f9fafb;
   padding: 64px 24px;
@@ -199,7 +195,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* During Section */
+
 .awareness-page-during-section {
   background-color: #3d3b32;
   color: white;
@@ -267,7 +263,7 @@
   background-color: #d1d5db;
 }
 
-/* After Section */
+
 .awareness-page-after-section {
   background-color: white;
   padding: 64px 24px;
@@ -295,7 +291,6 @@
   margin-bottom: 12px;
 }
 
-/* Bottom CTA Section */
 .awareness-page-bottom-cta {
   background-color: #3d3b32;
   color: white;
@@ -357,7 +352,6 @@
   color: #9ca3af;
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
   .awareness-page-back-btn {
     left: calc((100vw - 1280px) / 2 + 24px);

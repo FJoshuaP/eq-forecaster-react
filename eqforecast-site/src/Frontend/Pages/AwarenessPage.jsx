@@ -9,7 +9,7 @@ const AwarenessPage = ({ navigateToPage, isLoggedIn }) => {
 
   return (
     <div className="awareness-page-container">
-      {/* Header */}
+      
       <div className="awareness-page-header">
         <button
           onClick={goBack}
@@ -69,14 +69,14 @@ const AwarenessPage = ({ navigateToPage, isLoggedIn }) => {
         </div>
       </div>
 
-      {/* Main Hero Section */}
+      
       <div className="awareness-page-hero-section">
         <h1 className="awareness-page-hero-title">
           What to do BEFORE, DURING, and AFTER an earthquake?
         </h1>
       </div>
 
-      {/* Before Section */}
+      
       <div className="awareness-page-before-section">
         <h2 className="awareness-page-section-title">
           BEFORE an earthquake, you should...
@@ -129,7 +129,7 @@ const AwarenessPage = ({ navigateToPage, isLoggedIn }) => {
         </div>
       </div>
 
-      {/* During Section */}
+      
       <div className="awareness-page-during-section">
         <h2 className="awareness-page-section-title">
           DURING an earthquake, you should...
@@ -198,7 +198,7 @@ const AwarenessPage = ({ navigateToPage, isLoggedIn }) => {
         </div>
       </div>
 
-      {/* After Section */}
+      
       <div className="awareness-page-after-section">
         <h2 className="awareness-page-section-title">
           AFTER an earthquake, you should...
@@ -274,7 +274,7 @@ const AwarenessPage = ({ navigateToPage, isLoggedIn }) => {
         </div>
       </div>
 
-      {/* Bottom CTA Section */}
+      
       <div className="awareness-page-bottom-cta">
         <h2 className="awareness-page-cta-title">
           Want to know more about the model?

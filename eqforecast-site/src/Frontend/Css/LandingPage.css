@@ -1,11 +1,11 @@
-/* Landing Page Styles */
+
 .landing-page-container {
   font-family: Inter, sans-serif;
   min-height: 100vh;
   background-color: white;
 }
 
-/* Landing Page Header Styles */
+
 .landing-page-header {
   background-color: #102d30;
   color: white;
@@ -20,7 +20,7 @@
   max-width: 1280px;
   margin: 0 auto;
   flex-wrap: wrap;
-  /* gap: 100px; */
+  
 }
 
 .landing-page-logo {
@@ -70,7 +70,7 @@
   background-color: #547272;
 }
 
-/* Back Button */
+
 .landing-page-back-btn {
   position: absolute;
   left: 24px;
@@ -100,7 +100,7 @@
   height: 20px;
 }
 
-/* Admin Button */
+
 .landing-page-admin-btn {
   background-color: #f97316;
   padding: 8px 16px;
@@ -116,7 +116,6 @@
   background-color: #ea580c;
 }
 
-/* Landing Page Hero Section */
 .landing-page-hero-section {
   text-align: center;
   padding: 64px 24px;
@@ -150,7 +149,7 @@
   background-color: #547272;
 }
 
-/* Landing Page Map Section */
+
 .landing-page-map-section {
   position: relative;
 }
@@ -168,7 +167,7 @@
   object-fit: cover;
 }
 
-/* Landing Page Content Section */
+
 .landing-page-content-section {
   padding: 64px 24px;
   background-color: #f3f4f6;
@@ -214,7 +213,7 @@
   border-radius: 8px;
 }
 
-/* Landing Page Bottom CTA Section */
+
 .landing-page-bottom-cta {
   background-color: #102d30;
   color: white;
@@ -282,7 +281,6 @@
   color: #4d4b3f;
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
   .landing-page-back-btn {
     left: calc((100vw - 1280px) / 2 + 24px);

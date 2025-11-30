@@ -10,22 +10,8 @@ const LandingPage = ({ navigateToPage, isLoggedIn }) => {
 
   return (
     <div className="landing-page-container">
-      {/* Header */}
       <div className="landing-page-header">
-        <button
-          onClick={goBack}
-          className="landing-page-back-btn"
-          title="Go back"
-        >
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
+        
 
         <div className="landing-page-header-content">
           <div className="landing-page-logo"></div>
@@ -60,17 +46,11 @@ const LandingPage = ({ navigateToPage, isLoggedIn }) => {
             >
               Forecast Now
             </button>
-            <button
-              onClick={() => navigateToPage(1)}
-              className="landing-page-admin-btn"
-            >
-              Admin
-            </button>
           </div>
         </div>
       </div>
 
-      {/* Main Hero Section */}
+      
       <div className="landing-page-hero-section">
         <h1 className="landing-page-hero-title">Earthquake Forecasting</h1>
         <p className="landing-page-hero-subtitle">
@@ -85,7 +65,7 @@ const LandingPage = ({ navigateToPage, isLoggedIn }) => {
         </button>
       </div>
 
-      {/* Map Section */}
+      
       <div className="landing-page-map-section">
         <div className="landing-page-map-container">
           <img
@@ -96,7 +76,7 @@ const LandingPage = ({ navigateToPage, isLoggedIn }) => {
         </div>
       </div>
 
-      {/* Content Section */}
+      
       <div className="landing-page-content-section">
         <div className="landing-page-content-grid">
           <div className="landing-page-content-text">
@@ -131,7 +111,7 @@ const LandingPage = ({ navigateToPage, isLoggedIn }) => {
         </div>
       </div>
 
-      {/* Bottom CTA Section */}
+      
       <div className="landing-page-bottom-cta">
         <h2 className="landing-page-cta-title">
           Want to know more about the model?

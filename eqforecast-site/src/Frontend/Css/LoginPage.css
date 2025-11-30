@@ -1,4 +1,4 @@
-/* Login Page Styles */
+
 .login-page-container {
   font-family: Inter, sans-serif;
   min-height: 100vh;
@@ -10,7 +10,7 @@
   position: relative;
 }
 
-/* Back Button */
+
 .login-page-back-btn {
   position: absolute;
   left: 24px;
@@ -144,7 +144,7 @@
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-/* Responsive Design */
+
 @media (max-width: 480px) {
   .login-page-container {
     padding: 16px;

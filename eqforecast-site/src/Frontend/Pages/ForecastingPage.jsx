@@ -20,7 +20,7 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
   const [forecastData, setForecastData] = useState({});
   const [forecastLoading, setForecastLoading] = useState(false);
 
-  // Hardcoded bins with exact coordinates - DO NOT CHANGE THESE
+  
   const hardcodedBins = [
     {
       id: 0,
@@ -216,12 +216,12 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
     },
   ];
 
-  // Initialize with hardcoded bins
+  
   useEffect(() => {
     setSpatialBins(hardcodedBins);
   }, []);
 
-  // Fetch available years from Supabase forecasts table
+  
   useEffect(() => {
     const fetchAvailableYears = async () => {
       try {
@@ -231,27 +231,27 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
           return;
         }
 
-        // Extract unique years and sort them
+        
         const uniqueYears = [
           ...new Set(data.map((record) => record.year)),
         ].sort();
         setAvailableYears(uniqueYears);
 
-        // Default to 2025 if available, otherwise use the latest available year
+     
         if (uniqueYears.includes(2025)) {
           setSelectedYear(2025);
         } else if (uniqueYears.length > 0) {
           setSelectedYear(uniqueYears[uniqueYears.length - 1]);
         }
       } catch (error) {
-        // Handle error silently
+       
       }
     };
 
     fetchAvailableYears();
   }, []);
 
-  // Fetch forecast data from Supabase forecasts table when selected year changes
+ 
   useEffect(() => {
     const fetchForecastData = async () => {
       if (!selectedYear) return;
@@ -270,10 +270,10 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
           return;
         }
 
-        // Convert to a map for easy lookup using numeric bin IDs
+        
         const forecastMap = {};
         data.forEach((forecast) => {
-          // Use numeric bin_id as key (e.g., "0" -> 0, "1" -> 1)
+          
           const numericId = parseInt(forecast.bin_id);
           forecastMap[numericId] = forecast;
         });
@@ -290,7 +290,7 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
     fetchForecastData();
   }, [selectedYear]);
 
-  // Convert spatial bins to regions format for map display
+  
   const regions = hardcodedBins.map((bin) => {
     const forecast = forecastData[bin.id];
     return {
@@ -298,10 +298,10 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
       name: `Bin ${bin.id}`,
       bin: bin.id,
       positions: [
-        [bin.bounds[2], bin.bounds[0]], // SW corner (lat, lon)
-        [bin.bounds[2], bin.bounds[1]], // SE corner (lat, lon)
-        [bin.bounds[3], bin.bounds[1]], // NE corner (lat, lon)
-        [bin.bounds[3], bin.bounds[0]], // NW corner (lat, lon)
+        [bin.bounds[2], bin.bounds[0]], 
+        [bin.bounds[2], bin.bounds[1]], 
+        [bin.bounds[3], bin.bounds[1]], 
+        [bin.bounds[3], bin.bounds[0]], 
       ],
       earthquake_count: bin.earthquake_count || 0,
       max_magnitude: bin.max_magnitude || 0,
@@ -319,23 +319,15 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
   };
 
   const handleYearSubmit = () => {
-    // Handle year submission
+    
   };
 
-  // Fix for default markers
-  delete L.Icon.Default.prototype._getIconUrl;
-  L.Icon.Default.mergeOptions({
-    iconRetinaUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png",
-    iconUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
-    shadowUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
-  });
+  
+
 
   return (
     <div className="forecast-page-container">
-      {/* Header */}
+      
       <div className="forecast-page-header">
         <button
           onClick={goBack}
@@ -404,7 +396,7 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
       </div>
 
       <div className="forecast-page-content">
-        {/* Sidebar */}
+        
         <div className="forecast-page-sidebar">
           <div className="forecast-page-input-section">
             <label className="forecast-page-input-label">
@@ -569,7 +561,7 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
           </div>
         </div>
 
-        {/* Main Map Area */}
+        
         <div className="forecast-page-map-area">
           <div className="forecast-page-map-container">
             <MapContainer
@@ -582,7 +574,7 @@ const ForecastPage = ({ navigateToPage, isLoggedIn }) => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
 
-              {/* Earthquake forecast regions */}
+              
               {regions.map((region, index) => (
                 <Polygon
                   key={index}

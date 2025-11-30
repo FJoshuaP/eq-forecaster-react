@@ -1,11 +1,11 @@
-/* About Page Styles */
+
 .about-page-container {
   font-family: Inter, sans-serif;
   min-height: 100vh;
   background-color: white;
 }
 
-/* About Page Header Styles */
+
 .about-page-header {
   background-color: #102d30;
   color: white;
@@ -70,7 +70,7 @@
   background-color: #547272;
 }
 
-/* Back Button */
+
 .about-page-back-btn {
   position: absolute;
   left: 24px;
@@ -100,7 +100,7 @@
   height: 20px;
 }
 
-/* Admin Button (only visible when logged in) */
+
 .about-page-admin-btn {
   background-color: #f97316;
   padding: 8px 16px;
@@ -116,7 +116,6 @@
   background-color: #ea580c;
 }
 
-/* About Page Main Content */
 .about-page-main-content {
   max-width: 1280px;
   margin: 0 auto;
@@ -131,7 +130,6 @@
   text-align: center;
 }
 
-/* About Page Model Section */
 .about-page-model-section {
   margin-bottom: 64px;
 }
@@ -174,7 +172,7 @@
   border-radius: 8px;
 }
 
-/* About Page Team Section - Full width stretch */
+
 .about-page-team-section {
   background-color: #102d30;
   color: white;
@@ -285,7 +283,7 @@
   color: #9ca3af;
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
   .about-page-back-btn {
     left: calc((100vw - 1280px) / 2 + 24px);

@@ -9,13 +9,13 @@ import group from "../Pics/group.jpg";
 
 const AboutPage = ({ navigateToPage, isLoggedIn }) => {
   const goBack = () => {
-    // Navigate to the previous page or landing page
+    
     navigateToPage(3);
   };
 
   return (
     <div className="about-page-container">
-      {/* Header */}
+     
       <div className="about-page-header">
         <button
           onClick={goBack}
@@ -76,7 +76,7 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
       </div>
 
       <div className="about-page-main-content">
-        {/* About the model section */}
+       
         <h1 className="about-page-title">About the Model</h1>
 
         <div className="about-page-model-section">
@@ -161,7 +161,6 @@ const AboutPage = ({ navigateToPage, isLoggedIn }) => {
           </div>
         </div>
 
-        {/* About the team section */}
         <div className="about-page-team-section">
           <div className="about-page-team-content">
             <h2 className="about-page-team-main-title">About the team</h2>
